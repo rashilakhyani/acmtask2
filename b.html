@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<style>
+
+    #para
+    {
+        font-family: sans-serif;
+        color: dodgerblue;
+        float: left;
+        text-align: center;
+        padding-left: 30px;
+        /*margin: auto;*/
+    }
+
+    div.relative
+    {
+        width:100%;
+        max-width:1500px;
+         height: 100%;
+        position: relative;
+    }
+
+ul {
+    display: flex;
+  /*flex-wrap: wrap;*/
+  list-style-type: none;
+  /*overflow-y: scroll;*/
+  margin: 30px 0 0 0;
+  /*padding: 0px;*/
+  /*overflow: hidden;*/
+  
+}
+
+li {
+
+      display: flex;
+  flex-wrap: wrap;
+  float: right;
+  height: 100px;
+}
+
+li a {
+
+  color:  dodgerblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+
+  /*line-height: 1.5em;*/
+}
+
+li a:hover {
+    background-color: lightgrey;
+    text-align: center;
+    color: grey;
+    
+}
+div.absolute{
+      display: flex;
+    position: absolute;
+    height:100px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    top:30px;
+    right:5px;
+    left:5px;
+    width: 75%;
+    margin: auto;
+}
+.comment{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px #888888;
+    
+    /*width: 900px;*/
+    height: 3000px;
+    position: absolute;
+    top: 500px;
+    right:50px;
+    left:300px;
+    background-color: lightgrey;
+    width:100%;
+    max-width:900px;
+     /*height: 100%;*/
+    /*margin: auto;*/
+}
+
+.comment1{
+    display: block;
+    height: 500px;
+    /*width: 600px;*/
+
+    position: absolute;
+    top: 450px;
+    right:50px;
+    left:450px;
+    background-color: white;
+    width:100%;
+    max-width:600px;
+     /*height: 100%;*/
+    
+}
+/*#para1
+{
+    text-align: center;
+    padding-top: 300px;
+    padding-left: 200px;
+    font-family: sans-serif;
+}*/
+#btn1
+{
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 60px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 10px;
+    border:none;
+}
+#btn2
+{
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 60px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 10px;
+    border:none;
+}
+#btn3
+{
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 60px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 10px;
+    border:none;
+}
+#text1
+{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+#demo
+        {
+            position: absolute;
+            top:50px;
+            left:240px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+.comment2{
+    display: block;
+    height: 550px;
+    width: 600px;
+    position: absolute;
+    top: 1100px;
+    right:50px;
+    left:450px;
+    background-color: white;
+    
+}
+#demo1
+        {
+            position: absolute;
+            top:50px;
+            left:240px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+.comment3{
+    display: block;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 1750px;
+    right:50px;
+    left:450px;
+    background-color: white;
+    
+}
+
+#demo2
+        {
+            position: absolute;
+            top:50px;
+            left:240px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+.comment4{
+    display: block;
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    top: 2400px;
+    right:50px;
+    left:450px;
+    background-color: white;
+    
+}
+{
+
+} 
+#demo3
+        {
+            position: absolute;
+            top:50px;
+            left:240px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+
+ /**/
+            
+        
+        @media (min-width: 300px) and (max-width: 500px){
+            svg{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                font-size: 5px;
+
+            }
+            ul {
+                position: absolute;
+    display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  /*overflow-y: scroll;*/
+  margin: 0.0001px 0.1px 0 0;
+  /*padding: 0px;*/
+  /*overflow: hidden;*/
+  
+}
+
+li {
+/*position: absolute;*/
+      display: flex;
+  flex-wrap: wrap;
+  float: right;
+  height: 30px;
+}
+a{
+    color:  dodgerblue;
+  text-align: left;
+  /*padding: 4px 6px;*/
+  font-size: 7px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+            div.absolute{
+      /*display: flex;*/
+    position: absolute;
+    height:30px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    top:10px;
+    right:5px;
+    left:5px;
+    width: 75%;
+    margin: auto;
+}
+p.date1{
+        /*position: absolute;*/
+        top: 80px;
+        left: 120px;
+        color: lightgrey;
+        font-size: 7px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+            .comment{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    box-shadow: 5px 5px 10px #888888;
+    
+    /*width: 900px;*/
+    height: 2500px;
+    position: absolute;
+    top: 200px;
+    right:5px;
+    left:2px;
+    background-color: lightgrey;
+    /*width:100%;*/
+    max-width:350px;
+     /*height: 100%;*/
+    /*margin: auto;*/
+}
+p#lp1
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 88px;
+    left: 38px;
+    font-size: 15px;
+    color: slategrey;
+    }
+.comment1{
+    display: block;
+    height: 400px;
+    /*width: 600px;*/
+
+    position: absolute;
+    top: 170px;
+    right:50px;
+    left:25px;
+    background-color: white;
+    width:100%;
+    max-width:300px;
+     /*height: 100%;*/
+}
+#demo
+        {
+            position: absolute;
+            top:50px;
+            left:100px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+.relative
+{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    /*height: 100%;*/
+    max-height: 500px;
+    
+}
+div.img
+{
+    position: absolute;
+    top:130px;
+    /*right:50px;*/
+    left:140px;
+    /*width: :100%;*/
+    
+    /*height:100%;*/
+    
+}
+    img#user{border-radius: 50%;
+border: 1px solid white;
+padding: 0px; width:70px;height:70px;        
+     /*height: 100%;*/
+    }
+
+         #btn1
+{
+    position: absolute;
+    left: 110px;
+    top: 350px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 30px;
+    width: 80px;
+    font-size: 9px;
+    font-weight: 6px;
+    border:none;
+} 
+div#stars1
+{
+    
+    position:absolute;
+    top: 130px;
+    left: 100px;
+    display: block;
+    width: 100px
+    height:60px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 7px;
+    font-size: 15px
+
+}
+div#thumbsup1
+{
+    position: absolute;
+    top: 130px;
+    left: 70px;
+padding:7px;
+font-size: 15px; color:white;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: green;
+}
+div#content {
+    position: absolute;
+    top:170px;
+    left:20px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 120px;
+    width: 250px;
+    padding: 2px;
+    overflow: hidden;
+    font-size:13px;
+}
+.comment2{
+    display: block;
+    height: 480px;
+    width: 300px;
+    position: absolute;
+    top: 680px;
+    right:50px;
+    left:25px;
+    background-color: white;
+    
+}
+p#lp2
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 88px;
+    left: 38px;
+    font-size: 15px;
+    color: slategrey;
+    }
+    #demo1
+        {
+            position: absolute;
+            top:50px;
+            left:100px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        p.date2{
+        /*position: absolute;*/
+        top: 80px;
+        left: 120px;
+        color: lightgrey;
+        font-size: 7px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    div.img2
+{
+    position: absolute;
+    top:650px;
+    /*right:50px;*/
+    left:140px;
+    /*width: :100%;*/
+    
+    /*height:100%;*/
+    
+}
+    img#user{border-radius: 50%;
+border: 1px solid white;
+padding: 0px; width:70px;height:70px;        
+     /*height: 100%;*/
+    }
+    div#stars2
+{
+    
+    position:absolute;
+    top: 130px;
+    left: 100px;
+    display: block;
+    width: 100px
+    height:60px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 7px;
+    font-size: 15px
+
+}
+div#thumbsup2
+{
+    position: absolute;
+    top: 130px;
+    left: 70px;
+padding:7px;
+font-size: 15px; color:white;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: crimson red;
+}
+div#content2 {
+    position: absolute;
+    top:170px;
+    left:20px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 120px;
+    width: 250px;
+    padding: 2px;
+    overflow: hidden;
+    font-size:13px;
+}
+div#content2a{
+    display:block;
+    position:absolute ;
+    top: 350px;
+    left:20px;
+    font-size: 12px;
+    font-family: sans-serif;
+    background-color: lightgrey;
+    padding:10px;
+    width:240px;
+    height:80px;
+    overflow: hidden;
+
+}
+ div.img5
+{
+    position: absolute;
+    top:1110px;
+    /*right:50px;*/
+    left:140px;
+    /*width: :100%;*/
+    
+    /*height:100%;*/
+    
+}
+
+    img#user1{border-radius: 50%;
+border: 1px solid white;
+padding: 0px; width:40px;height:40px;        
+     /*height: 100%;*/
+    }
+div#manager
+{
+    position: absolute;
+    top:1150px;
+    left:160px;
+    /*right:50px;*/
+    font-family: sans-serif;
+    color:slategrey;
+    font-weight: bold;
+    font-size:7px; 
+}
+   p.date3{
+        /*position: absolute;*/
+        top: 80px;
+        left: 120px;
+        color: lightgrey;
+        font-size: 7px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+           
+
+p#lp3
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 88px;
+    left: 38px;
+    font-size: 15px;
+    color: slategrey;
+    }
+.comment3{
+    display: block;
+    height: 400px;
+    /*width: 600px;*/
+
+    position: absolute;
+    top: 1280px;
+    right:50px;
+    left:25px;
+    background-color: white;
+    width:100%;
+    max-width:300px;
+     /*height: 100%;*/
+}
+#demo2
+        {
+            position: absolute;
+            top:50px;
+            left:100px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+.relative
+{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    /*height: 100%;*/
+    max-height: 500px;
+    
+}
+div.img3
+{
+    position: absolute;
+    top:1250px;
+    /*right:50px;*/
+    left:140px;
+    /*width: :100%;*/
+    
+    /*height:100%;*/
+    
+}
+    img#user{border-radius: 50%;
+border: 1px solid white;
+padding: 0px; width:70px;height:70px;        
+     /*height: 100%;*/
+    }
+
+         #btn2
+{
+    position: absolute;
+    left: 110px;
+    top: 350px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 30px;
+    width: 80px;
+    font-size: 9px;
+    font-weight: 6px;
+    border:none;
+} 
+div#stars3
+{
+    
+    position:absolute;
+    top: 130px;
+    left: 100px;
+    display: block;
+    width: 100px
+    height:60px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 7px;
+    font-size: 15px
+
+}
+div#thumbsup3
+{
+    position: absolute;
+    top: 130px;
+    left: 70px;
+padding:7px;
+font-size: 15px; color:white;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: green;
+}
+div#content3 {
+    position: absolute;
+    top:170px;
+    left:20px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 120px;
+    width: 250px;
+    padding: 2px;
+    overflow: hidden;
+    font-size:13px;
+} 
+p.date4{
+        /*position: absolute;*/
+        top: 80px;
+        left: 120px;
+        color: lightgrey;
+        font-size: 7px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+           
+
+p#lp4
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 88px;
+    left: 38px;
+    font-size: 15px;
+    color: slategrey;
+    }
+.comment4{
+    display: block;
+    height: 400px;
+    /*width: 600px;*/
+
+    position: absolute;
+    top: 1800px;
+    right:50px;
+    left:25px;
+    background-color: white;
+    width:100%;
+    max-width:300px;
+     /*height: 100%;*/
+}
+#demo3
+        {
+            position: absolute;
+            top:50px;
+            left:100px;
+            color:steelblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+.relative
+{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    /*height: 100%;*/
+    max-height: 500px;
+    
+}
+div.img4
+{
+    position: absolute;
+    top:1780px;
+    /*right:50px;*/
+    left:140px;
+    /*width: :100%;*/
+    
+    /*height:100%;*/
+    
+}
+    img#user{border-radius: 50%;
+border: 1px solid white;
+padding: 0px; width:70px;height:70px;        
+     /*height: 100%;*/
+    }
+
+         #btn3
+{
+    position: absolute;
+    left: 110px;
+    top: 350px;
+    align-items: center;
+    background-color: gold;
+    color: steelblue;
+    height: 30px;
+    width: 80px;
+    font-size: 9px;
+    font-weight: 6px;
+    border:none;
+} 
+div#stars4
+{
+    
+    position:absolute;
+    top: 130px;
+    left: 100px;
+    display: block;
+    width: 100px
+    height:60px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 7px;
+    font-size: 15px
+
+}
+div#thumbsup4
+{
+    position: absolute;
+    top: 130px;
+    left: 70px;
+padding:7px;
+font-size: 15px; color:white;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: crimson red;
+}
+div#content4 {
+    position: absolute;
+    top:170px;
+    left:20px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 120px;
+    width: 250px;
+    padding: 2px;
+    overflow: hidden;
+    font-size:13px;
+} 
+}
+        
+       
+.img
+{
+    position: absolute;
+    top:400px;
+    right:50px;
+    left:700px;
+    /*width: :100%;*/
+    width:100px ;
+    /*height:100%;*/
+    height: 100px
+}
+.img2
+{
+    position: absolute;
+    top:1050px;
+    right:50px;
+    left:700px;
+    
+}
+.img5
+{
+    position: absolute;
+    top:1540px;
+    right:50px;
+    left:700px;
+    
+}
+#manager
+{
+    position: absolute;
+    top:1615px;
+    left:690px;
+    right:50px;
+    font-family: sans-serif;
+    color: slategrey;
+    font-weight: bold;
+    font-size:13px; 
+}
+.img3
+{
+    position: absolute;
+    top:1700px;
+    right:50px;
+    left:700px;
+    
+}
+.img4
+{
+    position: absolute;
+    top:2350px;
+    right:50px;
+    left:700px;
+    }
+#user{border-radius: 50%;
+border: 3px solid white;
+padding: 0px;
+}
+#user1{border-radius: 50%;
+border: 3px solid white;
+padding: 0px;
+}
+    .date1
+    {
+        position: absolute;
+        top: 75px;
+        left: 240px;
+        color: lightgrey;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+.date2
+{
+    position: absolute;
+    top: 75px;
+    left: 240px;
+    color: lightgrey;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#date5
+{
+    position: absolute;
+    top: 525px;
+    left: 240px;
+    color: lightgrey;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.date3
+{
+    position: absolute;
+    top: 75px;
+    left: 240px;
+    color: lightgrey;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.date4
+{
+    position: absolute;
+    top: 75px;
+    left: 240px;
+    color: lightgrey;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#lp1
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 83px;
+    font-size: 30px;
+    color: slategrey;
+
+}
+#lp2
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 83px;
+    font-size: 30px;
+    color: slategrey;
+}
+#lp3
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 83px;
+    font-size: 30px;
+    color: slategrey;
+}
+#lp4
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 83px;
+    font-size: 30px;
+    color: slategrey;
+}
+#text1
+{
+    font-family: sans-serif;
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    color: darkslategrey;
+}
+
+#stars1
+{
+    
+    position:absolute;
+    top: 181px;
+    left: 200px;
+    display: block;
+    width: 300px
+    height:90px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 10px;
+font-size: 38px;
+}
+#thumbsup1
+{
+    position: absolute;
+    top: 180px;
+    left: 140px;
+    font-size: 38px; color:white;
+padding:10px;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: green;
+}
+#stars2
+{
+    
+    position:absolute;
+    top: 181px;
+    left: 200px;
+    display: block;
+    width: 300px
+    height:90px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 10px;
+font-size: 38px;
+}
+#thumbsup2
+{
+    position: absolute;
+    top: 180px;
+    left: 140px;
+font-size: 38px; color:white;
+padding:10px;
+/*padding-top: 30px;
+padding-left: 30px;*/
+/*height: 60pxwidth: 60px;
+;*/
+background-color: crimson;
+}
+#stars3
+{
+    
+    position:absolute;
+    top: 181px;
+    left: 200px;
+    display: block;
+    width: 300px
+    height:90px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 10px;
+font-size: 38px;
+}
+#thumbsup3
+{
+    position: absolute;
+    top: 180px;
+    left: 140px;
+padding:10px;
+font-size: 38px; 
+color:white;
+/*display: block;
+padding-top: 30px;
+padding-left: 30px;
+width: 60px;
+height: 60px;*/
+background-color: green;
+}
+#stars4
+{
+    
+    position:absolute;
+    top: 181px;
+    left: 200px;
+    display: block;
+    width: 300px
+    height:90px;
+    /*background-color: black;*/
+    border:1px solid lightgrey;
+    padding: 10px;
+font-size: 38px;
+}
+#thumbsup4
+{
+    position: absolute;
+    top: 180px;
+    left: 140px;
+font-size: 38px; 
+color:white;
+/*display: block;*/
+/*padding: 30px;*/
+padding: 10px;
+/*width: 60px;*/
+/*height: 60px;*/
+background-color: crimson;
+}
+#content {
+    position: absolute;
+    top:250px;
+    left:50px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 100px;
+    width: 500px;
+    padding: 2px;
+    overflow: hidden    
+}
+#content2 {
+    position: absolute;
+    top:250px;
+    left:50px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 100px;
+    width: 500px;
+    padding: 2px;
+    overflow: hidden    
+}
+#content2a{
+    display:block;
+    position:absolute ;
+    top: 380px;
+    left:40px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: lightgrey;
+    padding:15px;
+    width:500px;
+    height:70px;
+    overflow: hidden;
+
+}
+#content3 {
+    position: absolute;
+    top:250px;
+    left:50px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 100px;
+    width: 500px;
+    padding: 2px;
+    overflow: hidden    
+}
+#content4 {
+    position: absolute;
+    top:250px;
+    left:50px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 100px;
+    width: 500px;
+    padding: 2px;
+    overflow: hidden    
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#content').click(function() {
+        // console.log("FF");
+    var reducedHeight = $(this).height();
+    $(this).css('height', 'auto');
+    var fullHeight = $(this).height();
+    $(this).height(reducedHeight);
+
+    $(this).animate({height: fullHeight}, 500);
+
+    })
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#content2').click(function() {
+        // console.log("FF");
+    var reducedHeight = $(this).height();
+    $(this).css('height', 'auto');
+    var fullHeight = $(this).height();
+    $(this).height(reducedHeight);
+
+    $(this).animate({height: fullHeight}, 500);
+
+    })
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#content3').click(function() {
+        // console.log("FF");
+    var reducedHeight = $(this).height();
+    $(this).css('height', 'auto');
+    var fullHeight = $(this).height();
+    $(this).height(reducedHeight);
+
+    $(this).animate({height: fullHeight}, 500);
+
+    })
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#content4').click(function() {
+        // console.log("FF");
+    var reducedHeight = $(this).height();
+    $(this).css('height', 'auto');
+    var fullHeight = $(this).height();
+    $(this).height(reducedHeight);
+
+    $(this).animate({height: fullHeight}, 300);
+
+    })
+});
+</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $("#btn1").on("click", setText);
+
+       function setText()
+       {
+            var v = $("#txtDemo").val();
+            $("#para1").text( v );
+       }
+      
+    }
+
+
+    
+
+</script> -->
+
+</head>
+<body>
+    <div class="relative"><img src="sea.jpg" style="width:100%;max-width:1500px; height: 100%;">
+<div class="absolute">
+    <p id="para"> <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="88px" viewBox="0 0 421 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>hc-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hc-logo">
+            <path d="M420.3,78.7 C420.3,83.4 416.5,87.2 411.8,87.2 C407.1,87.2 403.3,83.4 403.3,78.7 C403.3,74 407.1,70.2 411.8,70.2 C416.5,70.2 420.3,74 420.3,78.7 M386.4,78.7 C386.4,83.4 382.6,87.2 377.9,87.2 C373.2,87.2 369.4,83.4 369.4,78.7 C369.4,74 373.2,70.2 377.9,70.2 C382.6,70.2 386.4,74 386.4,78.7 M352.4,78.7 C352.4,83.4 348.6,87.2 343.9,87.2 C339.2,87.2 335.4,83.4 335.4,78.7 C335.4,74 339.2,70.2 343.9,70.2 C348.6,70.2 352.4,74 352.4,78.7 M318.4,78.7 C318.4,83.4 314.6,87.2 309.9,87.2 C305.2,87.2 301.4,83.4 301.4,78.7 C301.4,74 305.2,70.2 309.9,70.2 C314.6,70.2 318.4,74 318.4,78.7 M284.4,78.7 C284.4,83.4 280.6,87.2 275.9,87.2 C271.2,87.2 267.4,83.4 267.4,78.7 C267.4,74 271.2,70.2 275.9,70.2 C280.6,70.2 284.4,74 284.4,78.7 M250.3,78.7 C250.3,83.4 246.5,87.2 241.8,87.2 C237.1,87.2 233.3,83.4 233.3,78.7 C233.3,74 237.1,70.2 241.8,70.2 C246.5,70.2 250.3,74 250.3,78.7" id="circles" fill="#FAD73C"></path>
+            <path d="M38.1,51.8 C38.1,52.6 37.4,53.3 36.6,53.3 L32.4,53.3 C31.6,53.3 31,52.6 31,51.8 L31,30.7 L7.1,30.7 L7.1,51.8 C7.1,52.6 6.5,53.2 5.7,53.3 L1.6,53.3 C0.7,53.3 1.33226763e-15,52.6 1.33226763e-15,51.8 L1.33226763e-15,5.3 C1.33226763e-15,4.4 0.7,3.8 1.5,3.8 L5.7,3.8 C6.5,3.8 7.2,4.5 7.2,5.2 L7.2,24.4 L31,24.4 L31,5.1 C31,4.3 31.7,3.7 32.5,3.7 L36.6,3.7 C37.5,3.7 38.2,4.4 38.2,5.2 L38.2,51.8 L38.1,51.8 L38.1,51.8 Z M91.9,53.2 L91.8,53.2 C91,53.2 90.3,52.5 90.3,51.7 L90.3,1.5 C90.3,0.7 91,0 91.8,0 L95.6,0 C96.4,0 97.1,0.7 97.1,1.5 L97.1,53.2 L91.9,53.2 L91.9,53.2 Z M107.3,53.2 L107.2,53.2 C106.4,53.2 105.7,52.5 105.7,51.7 L105.7,18.5 C105.7,17.7 106.4,17 107.2,17 L111,17 C111.8,17 112.5,17.7 112.5,18.5 L112.5,53.2 L107.3,53.2 L107.3,53.2 Z M112.8,1.4 L112.8,7.5 C112.8,8.3 112.1,8.9 111.3,8.9 L105.2,8.9 L105.2,2.8 C105.2,2 105.9,1.3 106.7,1.3 L112.8,1.3 L112.8,1.4 L112.8,1.4 Z M53.4,35.2 C53.4,41.7 56.9,48.7 64.8,48.7 C72.7,48.7 76.1,41.6 76.1,35.2 C76.1,28.3 71.9,21.7 64.8,21.7 C57.6,21.6 53.4,28.3 53.4,35.2 L53.4,35.2 Z M46.3,35.2 C46.3,24.2 53.7,16.3 64.8,16.3 C75.9,16.3 83.3,24.2 83.3,35.2 C83.3,45.5 75.7,54.1 64.8,54.1 C53.8,54.1 46.3,45.5 46.3,35.2 Z M190.9,51.8 C190.9,52.6 190.2,53.3 189.4,53.3 L186.3,53.3 C185.4,53.3 184.7,52.7 184.7,51.8 L184.7,48.6 L184.6,48.6 C183,50.8 179.5,54.1 173.3,54.1 C165.5,54.1 160,50.7 160,42.8 C160,33.7 170,30.9 176.9,30.9 C179.5,30.9 181.4,30.9 184,31 C184,24.8 181.7,21.6 175,21.6 C172.1,21.6 169,22.4 166.5,23.9 C166.3,24 166,24.1 165.7,24.1 C164.9,24.1 164.3,23.5 164.2,22.7 L164,20.1 C164,19.8 164.1,19.5 164.4,19.4 C167.7,17.5 171.5,16.2 176,16.2 C186.4,16.2 190.6,21.3 190.6,31.2 L190.6,46.2 C190.7,48.8 190.8,50.5 190.9,51.8 Z M184,39.2 L184,36 L179.7,35.9 C176.1,35.9 167.1,36.5 167.1,42.8 C167.1,46.6 170.8,48.7 173.9,48.7 C180.5,48.7 184,44.6 184,39.2 L184,39.2 Z M146.5,51.7 L146.5,48.1 L146.4,48.1 C144.6,50.8 140.5,54.1 134,54.1 C123,54.1 118.4,44.4 118.4,34.5 C118.4,24.8 123.5,16.2 134.1,16.2 C140.4,16.2 144.1,18.7 146.2,22 L146.3,22 L146.3,1.5 C146.3,0.7 146.9,0 147.7,0 L151.5,0 C152.3,0 153,0.6 153,1.5 L153,51.7 C153,52.5 152.4,53.1 151.6,53.2 L148,53.2 C147.2,53.2 146.5,52.5 146.5,51.7 Z M125.5,35 C125.4,40.7 128.4,48.7 135.6,48.7 C143.2,48.7 146.3,41.3 146.3,35.2 C146.3,28.5 142.8,21.6 135.5,21.6 C128.2,21.6 125.3,28.4 125.5,35 L125.5,35 Z M206.8,50.8 L194.8,18.1 L194.7,17.8 C194.7,17.4 195,17.1 195.5,17.1 L200.7,17.1 C201.3,17.1 201.9,17.5 202.1,18.1 L211.6,47 L211.7,47 L221.3,18.2 L221.3,18.1 C221.5,17.6 222,17.2 222.6,17.2 L227.3,17.2 C227.7,17.2 228.1,17.5 228.1,17.9 L228.1,18.1 L215.7,52.2 L207.7,75.3 L207.6,75.6 C207.3,75.9 206.9,76 206.5,75.7 L202.5,72.5 C201.9,72 201.7,71.4 202,70.8 L208.1,55 C208.2,54.6 207.2,52 206.8,50.8 Z M270.9,51.3 C270.9,52 270.5,52.5 270,52.7 C266.4,53.9 262.3,54.1 259.6,54.1 C243.8,54.1 233.4,44 233.4,28.3 C233.4,13.1 244.5,2.9 259.7,2.9 C263.2,2.9 266.6,3.4 269.8,4.6 L269.9,4.6 C270.4,4.8 270.8,5.3 270.8,5.9 L270.4,10.7 C270.4,11.1 270,11.4 269.7,11.4 C269.6,11.4 269.5,11.4 269.4,11.3 C266.5,9.8 263.3,9.1 260.1,9.1 C248.6,9.1 241,17.3 241,28.4 C241,40 249.4,47.8 259.8,47.8 C262.9,47.8 267,47.1 269.7,45.9 L270,45.8 C270.4,45.8 270.7,46.1 270.7,46.6 L270.9,51.3 Z M311.3,51.7 C311.3,52.5 310.6,53.2 309.8,53.2 L306,53.2 C305.2,53.2 304.5,52.5 304.5,51.7 L304.5,34.5 C304.5,26.1 302.6,22 296.8,21.6 C289.2,21.6 285.7,27.7 285.7,36.5 L285.7,51.8 C285.7,52.6 285.1,53.2 284.3,53.3 L280.5,53.3 C279.7,53.3 279,52.6 279,51.8 L279,1.6 C279,0.7 279.7,5.32907052e-14 280.5,5.32907052e-14 L284.3,5.32907052e-14 C285.1,5.32907052e-14 285.8,0.7 285.8,1.5 L285.8,22.2 L285.9,22.2 C288.3,18.4 292.5,16.2 297.6,16.2 C307,16.2 311.2,22 311.2,31.7 L311.2,51.7 L311.3,51.7 L311.3,51.7 Z M382.8,51.6 C382.8,52.4 382.3,52.9 381.7,53.1 C379.2,54 376.6,54.1 374.5,54.1 C363.5,54.1 356,45.5 356,35.2 C356,24.2 363.4,16.3 374.5,16.3 C376.7,16.3 379.4,16.7 381.4,17.3 C382.1,17.5 382.5,18 382.5,18.7 L382.5,18.8 L382.2,22.2 C382.2,22.6 381.9,22.9 381.4,22.9 L381.2,22.9 C378.9,22.1 376.7,21.7 374.8,21.7 C367.3,21.7 363.1,28.4 363.1,35.2 C363.1,41.7 366.6,48.7 375.2,48.7 C377.1,48.7 379.5,48.2 381.4,47.2 C381.5,47.1 381.6,47.1 381.8,47.1 C382.2,47.1 382.5,47.4 382.5,47.8 L382.8,51.6 Z M412.5,53.2 C412,53.2 411.6,53 411.3,52.7 L395.5,34.6 L395.5,51.7 C395.5,52.5 394.8,53.2 394,53.2 L390.3,53.2 C389.5,53.2 388.8,52.5 388.8,51.7 L388.8,1.5 C388.8,0.7 389.5,4.97379915e-14 390.3,4.97379915e-14 L394,4.97379915e-14 C394.9,4.97379915e-14 395.5,0.7 395.5,1.5 L395.5,31.7 L409.6,17.6 C409.9,17.3 410.3,17.1 410.7,17.1 L417.4,17.1 C417.8,17.1 418.1,17.4 418.1,17.9 C418.1,18.1 418,18.3 417.9,18.4 L402.3,33.2 L420.1,52 C420.3,52.1 420.4,52.3 420.4,52.6 C420.4,53 420.1,53.3 419.7,53.3 L412.5,53.2 L412.5,53.2 Z M348.8,50.7 C348.8,51.4 348.4,51.9 347.9,52.1 C345.5,53 342.6,54.1 337.3,54.1 C324.4,54.1 318.5,46.3 318.5,34.5 C318.5,23.8 325.3,16.2 335.6,16.2 C347.4,16.2 351.5,24.6 351.6,35.9 C351.6,36.3 351.3,36.7 350.9,36.7 L325.7,36.7 C325.7,43.9 331.3,48.8 337.7,48.8 C341.4,48.8 345.5,47.2 347.8,45.9 C347.9,45.8 348,45.8 348.2,45.8 C348.6,45.8 349,46.1 349,46.5 L349,50.7 L348.8,50.7 L348.8,50.7 Z M325.6,31.7 L344.4,31.7 C344.4,26.2 341.1,21.6 335.3,21.6 C328.8,21.6 326.1,27 325.6,31.7 L325.6,31.7 Z" id="HolidayCheck" fill="dodgerblue"></path>
+        </g>
+    </g>
+</svg> </p>
+    
+<ul>
+  <li><a href="#home">Dashboard</a></li>
+  <li><a href="#news">Reviews</a></li>
+  <li><a href="#contact">Hotel Manager</a></li>
+  <li><a href="#about">Settings</a></li>
+</ul>
+</div>
+<div class="comment"></div>
+<div class="comment1" class="allcomments">
+    <p id="demo"></p>
+<p class="date1">21 September 2016</p>
+<p id=lp1>Lovely place! Totally worth visiting.</p>
+<div id=thumbsup1>
+<i class="fa fa-thumbs-up" aria-hidden="true"  ></i>
+</div>
+<div id="stars1">
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+</div>
+<script>
+var text = '{"employees":[' +
+'{"firstName":"Pamela","lastName":"Beesly" },' +
+'{"firstName":"Dwight","lastName":"Schrute" },' +
+'{"firstName":"Michael","lastName":"Scott" },'+'{"firstName":"Stanley","lastName":"Hudson" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[0].firstName + " " + obj.employees[0].lastName;
+</script>
+<!-- <figure>
+    <figcaption id="text1">
+        ahfndniene djdjiendbdj nhdjdid bdbdhid bdhdidi bdjhdid bdjdid bdhddo bdjdid bddiis wueiemeiwm njcnbmvcn bvmdmksioe bfgrrssvmso kritngnbgkldwoowjn bfhdiowwkndhf fjfifj.
+    </figcaption>
+</figure> -->
+<div id="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, nulla a aliquet ultrices, mauris turpis fermentum quam, vel varius dolor enim vitae lacus. Morbi ac posuere orci. Aliquam erat volutpat. Pellentesque consequat dignissim metus in accumsan. Maecenas sem augue, placerat commodo convallis non, commodo vel elit. Vestibulum porttitor tortor molestie ligula varius sed cursus arcu suscipit. Maecenas imperdiet laoreet suscipit. 
+</div>
+    <body>
+    <p id="para1" align="center"></p>
+    
+    <button id="btn1" onclick="getComment();"><b>ADD COMMENT</b></button>
+    
+</body>
+
+
+<script type="text/javascript">
+    function myFun()
+    {
+        $("p").hide();
+    }
+</script></div>
+<div class="img"><img  id="user" src="44.jpg" ></div>
+
+<div class="comment2" class="allcomments">
+    
+    <p id="demo1"></p>
+<p class="date2">21 september 2016</p>
+<p id="date5">21 september 2016</p>
+<p id=lp2>Lovely place! Totally worth visiting.</p>
+<div id=thumbsup2>
+<i class="fa fa-thumbs-down" aria-hidden="true" ></i>
+</div>
+<div id="stars2">
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+</div>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"Pamela","lastName":"Beesly" },' +
+'{"firstName":"Dwight","lastName":"Schrute" },' +
+'{"firstName":"Michael","lastName":"Scott" },'+'{"firstName":"Stanley","lastName":"Hudson" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo1").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+<div id="content2" class="allcomments">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, nulla a aliquet ultrices, mauris turpis fermentum quam, vel varius dolor enim vitae lacus. Morbi ac posuere orci. Aliquam erat volutpat. Pellentesque consequat dignissim metus in accumsan. Maecenas sem augue, placerat commodo convallis non, commodo vel elit. Vestibulum porttitor tortor molestie ligula varius sed cursus arcu suscipit. Maecenas imperdiet laoreet suscipit. 
+
+</div>
+<div id="content2a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, nulla a aliquet ultrices, mauris turpis fermentum quam, vel varius dolor enim vitae lacus. Morbi ac posuere orci. Aliquam erat volutpat. Pellentesque consequat dignissim metus in accumsan. Maecenas sem augue, placerat commodo convallis non, commodo vel elit. Vestibulum porttitor tortor molestie ligula varius sed cursus arcu suscipit. Maecenas imperdiet laoreet suscipit</div>
+</div>
+
+<div class="img2"><img  id="user" src="3.jpg" width="100" height="100"></div>
+<div class="img5"><img  id="user1" src="58.jpg" width="70" height="70"></div>
+<div id="manager"> Judith Wilmers </div>
+<div class="comment3" class="allcomments">
+    <p id="demo2"></p>
+<p class="date3">21 september 2016</p>
+<p id=lp3>Lovely place! Totally worth visiting.</p>
+<div id=thumbsup3>
+<i class="fa fa-thumbs-up" aria-hidden="true"  ></i>
+</div>
+<div id="stars3">
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+</div>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"Pamela","lastName":"Beesly" },' +
+'{"firstName":"Dwight","lastName":"Schrute" },' +
+'{"firstName":"Michael","lastName":"Scott" },'+'{"firstName":"Stanley","lastName":"Hudson" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo2").innerHTML =
+obj.employees[2].firstName + " " + obj.employees[2].lastName;
+</script>
+<div id="content3">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, nulla a aliquet ultrices, mauris turpis fermentum quam, vel varius dolor enim vitae lacus. Morbi ac posuere orci. Aliquam erat volutpat. Pellentesque consequat dignissim metus in accumsan. Maecenas sem augue, placerat commodo convallis non, commodo vel elit. Vestibulum porttitor tortor molestie ligula varius sed cursus arcu suscipit. Maecenas imperdiet laoreet suscipit. 
+</div>
+<body>
+    <p id="para1" align="center"></p>
+    
+    <button id="btn2" onclick="getComment1();"><b>ADD COMMENT</b></button>
+    
+</body>
+</div>
+<div class="img3"><img  id="user" src="72.jpg" width="100" height="100"></div>
+<div class="comment4" class="allcomments"><p id="demo3"></p>
+<p class="date4">21 september 2016</p>
+<p id=lp4>Lovely place! Totally worth visiting.</p>
+<div id=thumbsup4>
+<i class="fa fa-thumbs-down" aria-hidden="true"  ></i>
+</div>
+<div id="stars4">
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: gold;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+<i class="fa fa-star" aria-hidden="true" style=" color: lightgrey;"></i>
+</div>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"Pamela","lastName":"Beesly" },' +
+'{"firstName":"Dwight","lastName":"Schrute" },' +
+'{"firstName":"Michael","lastName":"Scott" },'+'{"firstName":"Stanley","lastName":"Hudson" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo3").innerHTML =
+obj.employees[3].firstName + " " + obj.employees[3].lastName;
+</script>
+<div id="content4">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut euismod, nulla a aliquet ultrices, mauris turpis fermentum quam, vel varius dolor enim vitae lacus. Morbi ac posuere orci. Aliquam erat volutpat. Pellentesque consequat dignissim metus in accumsan. Maecenas sem augue, placerat commodo convallis non, commodo vel elit. Vestibulum porttitor tortor molestie ligula varius sed cursus arcu suscipit. Maecenas imperdiet laoreet suscipit. 
+</div>
+<body>
+    <p id="para1" align="center"></p>
+    
+    <button id="btn3" onclick="getComment2();"><b>ADD COMMENT</b></button>
+    
+</body>
+</div>
+
+<div class="img4"><img  id="user" src="30.jpg" width="100" height="100"></div>
+
+
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    function getComment()
+    {
+        var c= prompt("Enter comment");
+        console.log(c);
+        $("#content").text( c );
+    }
+</script>
+<script type="text/javascript">
+    function getComment1()
+    {
+        var c= prompt("Enter comment");
+        console.log(c);
+        $("#content3").text( c );
+    }
+</script>
+<script type="text/javascript">
+    function getComment2()
+    {
+        var c= prompt("Enter comment");
+        console.log(c);
+        $("#content4").text( c );
+    }
+</script>
